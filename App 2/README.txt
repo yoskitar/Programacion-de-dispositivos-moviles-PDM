@@ -1,4 +1,3 @@
-Desarrollo de aplicación para ayudar a los enfermos de alzheimer en las primeras etapas de la enfermedad de manera que 
-ésta pueda ayudarles en tareas sencillas mediante recordatorios y la posibilidad de crear notas o apuntar eventos 
-próximos, a la vez que pueda ejercitar la memoria con ejercicios didácticos relacionados consigo mismo y su entorno o 
-familiares, con diferentes grados atendiendo a lo avanzada que se encuentre la enfermedad.
+Desarrollo de aplicación móvil empleando Unity para crear una representación del juego 'Scape Room' combinando la temática
+de la aventura real del juego en el mundo real, con la adaptación de estos a los juegos de cartas que nos permiten
+jugar con nuestros amigos o familiares en el salón de nuestra propia casa.
