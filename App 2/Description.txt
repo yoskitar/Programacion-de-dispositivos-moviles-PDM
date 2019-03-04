@@ -1,0 +1,6 @@
+Desarrollo de aplicación móvil para android empleando Unity para adaptar el famoso juego Scape Room
+a la pantalla de nuestro smartphone, combinando la temática de estos junto con la adaptación del juego de
+cartas de esta aventura de manera que podamos disfrutar en el salón de nuestra casa de una gran aventura
+ofreciendo una mayor jugabilidad y más dinamismo que la versión dicha versión de mesa, manteniendo la esencia
+de estos juegos cooperativos, permitiendo varios jugadores, ya que actualmente en el mercado, la mayoría de estos
+juegos tan solo permiten un jugador.
