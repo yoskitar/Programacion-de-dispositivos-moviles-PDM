@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad_bg"
+    tools:context=".ResultActivity">
+
+    <RelativeLayout
+        android:id="@+id/rellayGeneral"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/imgView_logo"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/googleg_standard_color_18" />
+
+        <TextView
+            android:id="@+id/titleClasification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="220dp"
+            android:textSize="30sp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Title_Results"
+            android:layout_below="@id/imgView_logo"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rellayRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/titleClasification"
+            android:background="@drawable/result_bg"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerResultUsers"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/rellayRecycler">
+
+            <Button
+                android:id="@+id/btnNewGame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/Button_NewGame"
+                android:textColor="@color/gradStart"
+                android:layout_centerInParent="true"
+                android:textSize="20sp"
+                android:clickable="true"
+                android:textAllCaps="true"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_marginStart="180dp"
+                android:layout_marginTop="100dp"
+                android:backgroundTint="@color/white"
+                android:background="@drawable/bt_bg"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

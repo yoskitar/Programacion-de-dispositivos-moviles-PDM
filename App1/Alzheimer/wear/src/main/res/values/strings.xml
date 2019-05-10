@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">AlzHelp</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="main">Gracias por usar AlzHelp, le avisaremos cuando recibamos alguna alerta.</string>
+    <string-array name="reply_choices">
+        <item>Localizar</item>
+        <item>Llamar</item>
+        <item>Localizar y eliminar aviso</item>
+        <item>Eliminar aviso</item>
+    </string-array>
+</resources>

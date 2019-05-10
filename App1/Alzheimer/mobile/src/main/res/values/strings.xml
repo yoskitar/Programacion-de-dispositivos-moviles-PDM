@@ -1,0 +1,86 @@
+<resources>
+    <!--Strings títulos-->
+    <string name="app_name">AlzHelp</string>
+    <string name="register_form">Nuevo Usuario</string>
+    <!--Strings para botones-->
+    <string name="Button_AddNewUser">Registrar</string>
+    <string name="Button_LoginUser">Acceder</string>
+    <string name="Button_ForgotPaswword">¿Olvidó su contraseña?</string>
+    <string name="Button_AddTask">Recordatorio</string>
+    <string name="Button_QuizGame">Entrenar Memoria</string>
+    <string name="Button_AskForHelp">Pedir Ayuda</string>
+    <string name="Button_CreateTask">Añadir</string>
+    <string name="Button_ShowAlerts">Mostrar Alertas</string>
+    <string name="Button_AddUserToCarer">Añadir Usuario</string>
+    <string name="Button_Analytics">Estadísticas de usuarios</string>
+    <string name="Button_RemoveTask">Eliminar</string>
+    <string name="Button_Objects">Voy a Salir</string>
+    <string name="Button_CancelAddTask">Cancelar</string>
+    <string name="Button_Yes">Si</string>
+    <string name="Button_No">No</string>
+    <string name="Button_NotNeedIt">No lo necesito</string>
+    <string name="Button_ResponseQuiz">Responder</string>
+    <string name="Button_CancelQuiz">Terminar Quiz</string>
+    <string name="Button_ConfirmAddUserToCarer">Vincular</string>
+    <!--Strings para inputs-->
+    <string name="Input_Name">Nombre</string>
+    <string name="Input_Surname">Apellidos</string>
+    <string name="Input_Email">Email</string>
+    <string name="Input_Password">Contraseña</string>
+    <string name="Input_ConfPassword">Conf. Contraseña</string>
+    <string name="Input_PhoneNumber">Número de teléfono</string>
+    <string name="Input_TypeUser">Selecciona para crear cuenta de personal de apoyo</string>
+    <string name="Input_AnswerQuiz">Respuesta</string>
+    <string name="Input_UserPin">Pin de Usuario</string>
+    <!--Contents Descriptions-->
+    <string name="Icon_Return">Volver</string>
+    <!--Mensajes-->
+    <string name="Mesg_EmptWall">¡Buenas! No hay recordatorios pendientes</string>
+    <string name="Mesg_DefaultHelp">¡Necesito Ayuda!</string>
+    <string name="Mesg_Oject">¿Lleva el objeto mostrado?</string>
+    <!--Tareas-->
+    <string name="Task_Data">Datos de la tarea del usuario</string>
+    <string name="Task_Title">Título de la tarea </string>
+    <string name="Task_Description">Descripción </string>
+    <string name="Task_Date">dd/mm/aa </string>
+    <string name="Task_Time">hh:mm</string>
+
+
+    <string name="main">Gracias por usar AlzHelp</string>
+    <string-array name="reply_choices">
+        <item>Localizar</item>
+        <item>Llamar</item>
+        <item>Localizar y eliminar aviso</item>
+        <item>Eliminar aviso</item>
+    </string-array>
+
+    <!-- ChatBot-Texts -->
+    <string name="speechbtn_default">Press me to speak!</string>
+    <string name="speechbtn_listening">Escuchando...</string>
+    <string name="initial_prompt">Estoy escuchando!</string>
+    <string name="check_internet_connection">Please check your Internet connection</string>
+    <string name="asr_permission">TalkBack must access the microphone in order to perform speech recognition</string>
+    <string name="asr_permission_notgranted">Sorry, TalkBack cannot work without accessing the microphone</string>
+    <string name="asr_notsupported">ASR not supported</string>
+    <string name="asr_results">Results ready :D</string>
+    <string name="asr_invalid_params">Invalid parameters for recognition</string>
+    <string name="asr_error">Error de reconocimiento de habla</string>
+    <string name="asr_readyforspeech">Ready to hear you speak!</string>
+    <string name="asr_beginningofspeech">You have started talking ;)</string>
+    <string name="asr_buffer">Buffer received</string>
+    <string name="asr_endofspeech">You have stopped talking</string>
+    <string name="asr_parcialresult">Parcial results received</string>
+    <string name="asr_error_audio"> Audio recording error</string>
+    <string name="asr_error_client">Unknown client side error</string>
+    <string name="asr_error_permissions">Insufficient permissions</string>
+    <string name="asr_error_network">Network related error</string>
+    <string name="asr_error_networktimeout">Network operation timed out</string>
+    <string name="asr_error_nomatch">No recognition result matched</string>
+    <string name="asr_error_recognizerbusy">Recognition service busy</string>
+    <string name="asr_error_server">Server sends error status</string>
+    <string name="asr_error_speechtimeout">No speech input detected</string>
+    <string name="asr_notstarted">Speech recognition could not be started</string>
+
+    <string name="asr_error_default">Error Default</string>
+
+</resources>

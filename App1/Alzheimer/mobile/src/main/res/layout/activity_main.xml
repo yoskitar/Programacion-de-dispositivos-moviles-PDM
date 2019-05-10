@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/rellaywall"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@drawable/grad_bg">
+
+        <ImageButton
+            android:id="@+id/imageButtonPinUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/transparent"
+            android:scaleY="1.5"
+            android:scaleX="1.5"
+            android:clickable="true"
+            app:srcCompat="@android:drawable/ic_menu_info_details" />
+
+        <RelativeLayout
+            android:id="@+id/rellaynoitem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_below="@+id/imageButtonPinUser"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/wall_bg"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Mesg_EmptWall"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="sans-serif-condensed-light"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rellayitem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/wall_bg"
+            android:visibility="gone">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerVWall"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rellayitemdetail"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/wall_bg"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/task_bg">
+
+                <LinearLayout
+                    android:id="@+id/lintitleitem"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/intitleTask"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/Task_Title" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lindesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_below="@id/lintitleitem">
+
+                    <EditText
+                        android:id="@+id/indescriptionTask"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/Task_Description"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lindateTask"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="150dp"
+                    android:layout_below="@+id/lindesc"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/indateTask"
+                        android:inputType="date"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:hint="@string/Task_Date"
+                        />
+
+                    <EditText
+                        android:id="@+id/intimeTask"
+                        android:inputType="datetime"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/Task_Time"
+                        />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rellaybtntask"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/rellayitemdetail"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/btn_cancelAddTask"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/bt_bg"
+                android:text="@string/Button_CancelAddTask"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="17sp"/>
+
+            <Button
+                android:id="@+id/btn_createTask"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="35dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/bt_bg"
+                android:text="@string/Button_CreateTask"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="17sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rellaybtntaskremove"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/rellayitemdetail"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/btn_cancelRemoveTask"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/bt_bg"
+                android:text="@string/Button_CancelAddTask"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="17sp"/>
+
+            <Button
+                android:id="@+id/btn_removeTask"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="35dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/bt_bg"
+                android:text="@string/Button_RemoveTask"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="17sp"/>
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rellaywall"
+        android:background="@drawable/grad_bg">
+
+        <LinearLayout
+            android:id="@+id/linlaybtn"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_alignParentStart="true"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rellaybtn1"
+                android:layout_width="205dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/btactions_bg">
+
+                <Button
+                    android:id="@+id/btnAddTask"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@color/transparent"
+                    android:clickable="true"
+                    android:fontFamily="sans-serif-black"
+                    android:text="@string/Button_AddTask"
+                    android:textAllCaps="true"
+                    android:textColor="@color/dark_yellow"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rellaybtn2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/btactions_bg">
+
+                <Button
+                    android:id="@+id/btnObjects"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@color/transparent"
+                    android:clickable="true"
+                    android:fontFamily="sans-serif-black"
+                    android:text="@string/Button_Objects"
+                    android:textAllCaps="true"
+                    android:textColor="@color/dark_yellow"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal"
+            android:layout_below="@id/linlaybtn">
+
+            <RelativeLayout
+                android:id="@+id/rellaybtn3"
+                android:layout_width="205dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/btactions_bg">
+
+                <Button
+                    android:id="@+id/btnQuizGame"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@color/transparent"
+                    android:clickable="true"
+                    android:fontFamily="sans-serif-black"
+                    android:text="@string/Button_QuizGame"
+                    android:textAllCaps="true"
+                    android:textColor="@color/dark_yellow"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rellaybtn4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/btactions_bg">
+
+                <Button
+                    android:id="@+id/btnAskForHelp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@color/transparent"
+                    android:clickable="true"
+                    android:fontFamily="sans-serif-black"
+                    android:text="@string/Button_AskForHelp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/dark_yellow"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

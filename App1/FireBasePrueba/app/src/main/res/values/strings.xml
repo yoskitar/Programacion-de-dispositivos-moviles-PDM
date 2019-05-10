@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FireBasePrueba</string>
+
+    <string name="Button_AddNewUser">Registrar Usuario</string>
+    <string name="Button_LoginUser">Acceder</string>
+
+    <string name="Input_Name">Nombre</string>
+    <string name="Input_Email">Email</string>
+    <string name="Input_Password">Password</string>
+
+</resources>

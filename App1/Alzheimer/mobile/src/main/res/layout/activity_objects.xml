@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad_bg"
+    tools:context=".ObjectsActivity">
+
+    <RelativeLayout
+        android:id="@+id/rellaywallquiz"
+        android:layout_width="match_parent"
+        android:layout_height="350dp">
+
+        <ImageButton
+            android:id="@+id/imgbtn_ReturnObj"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="25dp"
+            android:background="@color/transparent"
+            android:clickable="true"
+            android:contentDescription="@string/Icon_Return"
+            app:srcCompat="@android:drawable/ic_menu_revert" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="35dp">
+
+            <ImageView
+                android:id="@+id/imgVObj"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rellaywallquiz">
+
+        <LinearLayout
+            android:id="@+id/linlaybtnobjects"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:textAlignment="center"
+                android:text="@string/Mesg_Oject"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp">
+
+                <Button
+                    android:id="@+id/btnNo"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="25dp"
+                    android:background="@drawable/bt_bg"
+                    android:clickable="true"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                    android:text="@string/Button_No"
+                    />
+
+                <Button
+                    android:id="@+id/btnYes"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/bt_bg"
+                    android:fontFamily="sans-serif-condensed"
+                    android:clickable="true"
+                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+
+                    android:text="@string/Button_Yes"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp">
+
+                <Button
+                    android:id="@+id/btnNotNeedIt"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="80dp"
+                    android:background="@drawable/bt_bg"
+                    android:clickable="true"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                    android:text="@string/Button_NotNeedIt"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<resources>
+
+
+    <!--Strings títulos-->
+    <string name="app_name">Who is more...?</string>
+    <string name="Title_Results">Clasificación</string>
+    <!--Strings para botones-->
+    <string name="Button_LoginUser">Continuar</string>
+    <string name="Button_CreateMatch">Crear Sala</string>
+    <string name="Button_JoinMatch">Unirse a Sala</string>
+    <string name="Button_InitMatch">Iniciar Partida</string>
+    <string name="Button_NewGame">Nueva Partida</string>
+    <string name="RV_UserName">Nombre de Usuario</string>
+
+
+    <!--Strings para inputs-->
+    <string name="Input_NameMatch">Nombre de la sala</string>
+    <string name="Input_PassMatch">Pin de la sala</string>
+    <string name="Input_UserName">Introduzca un nombre de usuario</string>
+
+
+</resources>
