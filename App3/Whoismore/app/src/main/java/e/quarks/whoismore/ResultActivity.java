@@ -132,7 +132,7 @@ public class ResultActivity extends AppCompatActivity {
                     }
 
                     results.put(idQuestion,usersResponses);
-                    Log.d("resul",String.valueOf(results.size()));
+                    //Log.d("resul",String.valueOf(results.size()));
                 }
                 setWinnerResponseForQuestion();
             }
@@ -150,9 +150,9 @@ public class ResultActivity extends AppCompatActivity {
         Integer cntMostVoted;
         String idv;
         Integer cntv;
-        Log.d("WINNERFUERA", String.valueOf(results.size()));
+        //Log.d("WINNERFUERA", String.valueOf(results.size()));
         for(int i=0 ; i<results.size(); i++){
-            Log.d("WINNER", String.valueOf(results.size()));
+            //Log.d("WINNER", String.valueOf(results.size()));
             votes.clear();
             result = results.valueAt(i);
             itr = result.iterator();
@@ -187,7 +187,7 @@ public class ResultActivity extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {
                             if (task.isSuccessful()) {
-                                Log.d("CLASIFICATION", "Pregunta votada");
+                                //Log.d("CLASIFICATION", "Pregunta votada");
                             } else {
 
                             }
@@ -210,7 +210,7 @@ public class ResultActivity extends AppCompatActivity {
 
                 for(DataSnapshot ds : dataSnapshot.getChildren()){
                     final ClasificationResult r = ds.getValue(ClasificationResult.class);
-                    Log.d("SCORE", "NO ENTREA2");
+                    //Log.d("SCORE", "NO ENTREA2");
 
                     Query  qa = refDB.child("Matches").child(currentMatch.getUid()).child("Answers")
                             .child(ds.getKey())
@@ -220,7 +220,7 @@ public class ResultActivity extends AppCompatActivity {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot dataSnapshot2) {
                             if(r.getIdUser().equals(dataSnapshot2.getValue(String.class))){
-                                Log.d("SCORE", "entraaa");
+                                //Log.d("SCORE", "entraaa");
                                 scoreUser++;
                                 refDB.child("Matches").child(currentMatch.getUid()).child("ClasificationScore").
                                         child(currentUser.getUid())
@@ -229,7 +229,7 @@ public class ResultActivity extends AppCompatActivity {
                                             @Override
                                             public void onComplete(@NonNull Task<Void> task) {
                                                 if (task.isSuccessful()) {
-                                                    Log.d("SCORE", "Score creada");
+                                                    //Log.d("SCORE", "Score creada");
                                                 } else {
 
                                                 }

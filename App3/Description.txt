@@ -1,1 +1,12 @@
-Desarrollo de aplicación 3.
+Desarrollo de aplicación destinada al entreteniemiento de los usuarios donde
+la dinámica del juego será la de responder a una serie de preguntas con el 
+nombre de cada uno de los jugadores indicando qué jugador sería el más
+probable que hiciera o le sucediera lo que se plantea en la pregunta. Los
+jugadores que pierdan serán aquellos que no hubieran votado por aquel jugador
+que ha alcanzado la mayoría de votos. En dicho caso, aquellos jugadores
+que han fallado deberán realizar algun reto propuesto por el grupo, como 
+por ejemplo beberse un chupito.
+El host será el encargado de crear la sala e indicará en cada ronda el jugador
+que más votos ha recibido. Los juagadores se unirán a la sala creada por el host
+mediante el nombre puesta a ésta, introduciendo un pin que este host deberá 
+proporcionar al resto de jugadores para que puedan así entrar.
