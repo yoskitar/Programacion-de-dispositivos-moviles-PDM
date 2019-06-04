@@ -1,0 +1,28 @@
+query consumersQuery{
+    consumers{
+        user_id{
+            _id
+            username
+            password
+            email
+        }
+    }
+}
+
+query consumerQuery($user_id: String!){
+    consumer(user_id: $user_id){
+        user_id{
+            username
+        }
+    }
+}
+
+mutation registerConsumerMutation($user_id: String!, $age: Int!, $NIF: String, $telephone: String){
+    registerConsumer(user_id: $user_id, age: $age, NIF: $NIF, telephone: $telephone){
+        success
+        errors{
+            message
+            path
+        }
+    }
+}

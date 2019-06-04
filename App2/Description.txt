@@ -1,6 +1,7 @@
-Desarrollo de aplicación móvil para android empleando Unity para adaptar el famoso juego Scape Room
-a la pantalla de nuestro smartphone, combinando la temática de estos junto con la adaptación del juego de
-cartas de esta aventura de manera que podamos disfrutar en el salón de nuestra casa de una gran aventura
-ofreciendo una mayor jugabilidad y más dinamismo que la versión dicha versión de mesa, manteniendo la esencia
-de estos juegos cooperativos, permitiendo varios jugadores, ya que actualmente en el mercado, la mayoría de estos
-juegos tan solo permiten un jugador.
+Desarrollo de aplicación para la gestión de eventos, permitiendo cierta interacción entre los 
+usuarios como si de una red social se tratase. Los gestores podrán publicar sus eventos en la
+aplicación de manera que los usuarios puedan conocer que eventos habrá disponibles, y el número
+de asistentes a estos, permitiendoles indicar su propia asistencia. Esto le resultará de gran 
+ayuda a los gestores para hacer una previsión de los recursos que necesitarán al conocer una 
+aproximación de asistentes.
+Para su funcionamiento deberá de iniciar la api desarrollada e introducir la dirección IP correcta.

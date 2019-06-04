@@ -1,0 +1,9 @@
+mutation registerPassMutation($service_id: String!, $numPass: Int!){
+    registerPass(service_id: $service_id, numPass: $numPass){
+        success
+        errors{
+            message
+            path
+        }
+    }
+}

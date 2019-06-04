@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/audience">
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rellay_selectorType"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/TV_typeUser"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="420dp"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="@string/TV_typeAccount"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="30sp" />
+        <Button
+            android:id="@+id/btnRegConsumer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TV_typeUser"
+            android:layout_marginTop="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:background="@drawable/bt_bg"
+            android:clickable="true"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textAlignment="center"
+            android:text="@string/Btn_regConsumer"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+        <Button
+            android:id="@+id/btnRegProducer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_below="@+id/btnRegConsumer"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:background="@drawable/bt_bg"
+            android:clickable="true"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textAlignment="center"
+            android:text="@string/Btn_regProducer"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rellay_signUpConsumer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/inEmailReg"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginRight="40dp"
+            android:layout_alignParentTop="true"
+            android:autofillHints=""
+            android:background="@drawable/bt_bg"
+            android:fontFamily="sans-serif-medium"
+            android:hint= "@string/Input_email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp" />
+        <EditText
+            android:id="@+id/inUserNameRegReg"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/inEmailReg"
+            android:layout_height="40dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:autofillHints=""
+            android:background="@drawable/bt_bg"
+            android:fontFamily="sans-serif-medium"
+            android:hint="@string/Input_username"
+            android:inputType="textPersonName"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp" />
+        <EditText
+            android:id="@+id/inPasswordReg"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/inUserNameRegReg"
+            android:layout_height="40dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:autofillHints=""
+            android:background="@drawable/bt_bg"
+            android:fontFamily="sans-serif-medium"
+            android:hint="@string/Input_password"
+            android:inputType="textPassword"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp" />
+        <EditText
+            android:id="@+id/inTelephoneReg"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/inPasswordReg"
+            android:layout_height="40dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:autofillHints=""
+            android:background="@drawable/bt_bg"
+            android:fontFamily="sans-serif-medium"
+            android:hint="@string/Input_telephone"
+            android:inputType="phone"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp" />
+        <EditText
+            android:id="@+id/inNIFReg"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/inTelephoneReg"
+            android:layout_height="40dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:autofillHints=""
+            android:background="@drawable/bt_bg"
+            android:fontFamily="sans-serif-medium"
+            android:hint="@string/Input_NIF"
+            android:inputType="text"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/inBirthdayReg"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/inNIFReg"
+            android:layout_height="40dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/bt_bg"
+            android:fontFamily="sans-serif-medium"
+            android:hint="@string/Input_birthday"
+            android:clickable="true"
+            android:paddingTop="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp" />
+
+
+        <Button
+            android:id="@+id/btnSignUpReg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inBirthdayReg"
+            android:layout_marginTop="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:background="@drawable/bt_bg"
+            android:clickable="true"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textAlignment="center"
+            android:text="@string/Btn_signUp"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+        <Button
+            android:id="@+id/btnSignInReg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@color/transparent"
+            android:clickable="true"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="@string/Btn_signIn"
+            android:layout_marginLeft="5dp"
+            android:textAllCaps="true"
+            android:textColor="@color/white" />
+        <Button
+            android:id="@+id/btnChangeType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/transparent"
+            android:clickable="true"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="@string/Btn_changeType"
+            android:layout_marginRight="5dp"
+            android:textAllCaps="true"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

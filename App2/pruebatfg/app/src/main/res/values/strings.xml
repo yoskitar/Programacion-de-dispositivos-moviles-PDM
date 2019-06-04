@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Event Go</string>
+
+    <string name="TV_typeAccount">Select an account type</string>
+    <string name="TV_followers">Followers</string>
+    <string name="TV_porcentAssistents">Assistance Ratio</string>
+
+    <string name="Input_username">Username</string>
+    <string name="Input_password">Password</string>
+    <string name="Input_email">Email</string>
+    <string name="Input_birthday">Birthday</string>
+    <string name="Input_NIF">NIF</string>
+    <string name="Input_CIF">CIF</string>
+    <string name="Input_telephone">Phone number</string>
+
+    <string name="Input_serviceName">Event name</string>
+    <string name="Input_serviceDescription">Description</string>
+    <string name="Input_serviceLocation">Event location</string>
+    <string name="Input_serviceDateInit">Event Start</string>
+    <string name="Input_serviceDateEnd">Event End</string>
+    <string name="Input_addPasses">Add Passes</string>
+
+    <string name="Btn_login">Login</string>
+    <string name="Btn_signUp">Sign Up</string>
+    <string name="Btn_signIn">Sign In</string>
+    <string name="Btn_changeType">Change Account</string>
+    <string name="Btn_forgotPassword">Forgot Password?</string>
+    <string name="Btn_regConsumer">User</string>
+    <string name="Btn_regProducer">Business</string>
+    <string name="Btn_registerService">Publish Event</string>
+    <string name="Btn_selectServiceImage">Select an image for your event</string>
+    <string name="Btn_addMicroServices">Add Microservice</string>
+
+
+    <string name="required_field">Required field</string>
+    <string name="Msg_userCreated">User created succesfully</string>
+
+
+    <string name="TOKEN_USER">TOKEN-USER</string>
+    <string name="ID_USER">ID-USER</string>
+    <string name="ID_PRODUCER">ID-PRODUCER</string>
+    <string name="PASS_TYPE">PASS</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

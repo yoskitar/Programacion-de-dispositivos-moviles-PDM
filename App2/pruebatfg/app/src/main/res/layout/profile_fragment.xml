@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/notification_bar"></LinearLayout>
+    <LinearLayout
+        android:id="@+id/linlayout_dataProfile"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="105dp">
+
+        <ImageView
+            android:id="@+id/IV_userPhoto"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            app:srcCompat="@drawable/girlhd" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/TV_userNameProducer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:textSize="28sp"
+                android:textAllCaps="true"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:hint="@string/Input_username"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center"
+                        android:textSize="20sp"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:hint="@string/TV_followers"/>
+                    <TextView
+                        android:id="@+id/TV_followers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center"
+                        android:textSize="20sp"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:hint="0"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center"
+                        android:textSize="20sp"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:hint="@string/TV_porcentAssistents"/>
+                    <TextView
+                        android:id="@+id/TV_assistanceRatio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center"
+                        android:textSize="20sp"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:hint="0"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/linlayout_dataProfile"
+        android:background="@color/notification_bar">
+    </LinearLayout>
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayoutProfile"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="45dp"
+        android:layout_below="@+id/linlayout_dataProfile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/RV_servicesProducer"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

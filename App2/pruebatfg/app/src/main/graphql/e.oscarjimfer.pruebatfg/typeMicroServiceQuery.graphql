@@ -1,0 +1,9 @@
+mutation registerTypeMicroServiceMutation($microService_id: String!){
+    registerTypeMicroService(microService_id: $microService_id){
+        success
+        errors{
+            message
+            path
+        }
+    }
+}

@@ -1,0 +1,21 @@
+mutation registerProducerMutation($user_id: String!, $CIF: String, $telephone: String){
+    registerProducer(user_id: $user_id, CIF: $CIF, telephone: $telephone){
+        success
+        errors{
+            message
+            path
+        }
+    }
+}
+
+query producersQuery($user_id: String!){
+    producer(user_id: $user_id){
+        _id
+        user_id{
+            username
+        }
+        dataAccount{
+            thumbnail
+        }
+    }
+}

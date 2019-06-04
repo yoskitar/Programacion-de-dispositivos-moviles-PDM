@@ -1,0 +1,37 @@
+query servicesByProducerQuery($producer: String!){
+    servicesByProducer(producer: $producer){
+        _id
+        serviceName
+        description{
+            info
+            photo
+        }
+        duration
+        createdAt
+        dateInit
+        typeService
+    }
+}
+
+query servicesQuery{
+    services{
+        _id
+        serviceName
+        producer{
+            _id
+        }
+    }
+}
+
+mutation registerServiceMutation($serviceName: String!, $description: DescriptionData, $duration: Int, $producer: String!, $dateInit: String!){
+    registerService(serviceName: $serviceName, description: $description, duration: $duration, producer: $producer, dateInit: $dateInit){
+        service{
+            _id
+        }
+        success
+        errors{
+            message
+            path
+        }
+    }
+}

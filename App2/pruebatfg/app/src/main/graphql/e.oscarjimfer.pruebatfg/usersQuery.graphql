@@ -1,0 +1,43 @@
+query usersQuery{
+    users{
+        _id
+        username
+        password
+        email
+    }
+}
+
+query userQuery($_id: String!){
+    user(_id: $_id){
+        _id
+        username
+
+    }
+}
+
+mutation loginMutation($username: String!, $password: String!){
+    login(username: $username, password: $password){
+        success
+        userResponse{
+            _id
+        }
+        token
+        errors{
+            message
+            path
+        }
+    }
+}
+
+mutation registerUserMutation($username: String!, $password: String!, $email: String!){
+    registerUser(username: $username, password: $password, email: $email){
+        success
+        userResponse{
+            _id
+        }
+        errors{
+            message
+            path
+        }
+    }
+}
