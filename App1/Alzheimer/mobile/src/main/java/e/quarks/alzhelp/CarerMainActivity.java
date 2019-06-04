@@ -269,7 +269,7 @@ public class CarerMainActivity extends VoiceActivity {
         currentUser = FirebaseAuth.getInstance().getCurrentUser();
         if(currentUser != null){
 
-            Toast.makeText(CarerMainActivity.this,currentUser.getUid(), Toast.LENGTH_SHORT).show();
+           // Toast.makeText(CarerMainActivity.this,currentUser.getUid(), Toast.LENGTH_SHORT).show();
         }else{
             Toast.makeText(CarerMainActivity.this,"Sesión cerrada, vuelva a logearse", Toast.LENGTH_SHORT).show();
             Intent loginActivity = new Intent(CarerMainActivity.this,LoginActivity.class);

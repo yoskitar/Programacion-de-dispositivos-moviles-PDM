@@ -135,7 +135,7 @@ public class QuizGameActivity extends AppCompatActivity {
         quiz.add(new QuizModel("¿Cuál es la capital de España?","Madrid","2"));
         quiz.add(new QuizModel("¿Dónde se originaron los juegos olímpicos?","Grecia","3"));
         quiz.add(new QuizModel("¿En qué año terminó la II Guerra Mundial?","1945","4"));
-        quiz.add(new QuizModel("¿En qué país se encuentra la torre de Pisa?","Madrid","5"));
+        quiz.add(new QuizModel("¿En qué país se encuentra la torre de Pisa?","Italia","5"));
         itq = quiz.iterator();
     }
 

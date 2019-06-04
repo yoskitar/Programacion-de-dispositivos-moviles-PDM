@@ -82,7 +82,7 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(LoginActivity.this,"Login Button.", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(LoginActivity.this,"Login Button.", Toast.LENGTH_SHORT).show();
                 if(cheackLog()) {
                     signIn();
                 }
@@ -98,14 +98,14 @@ public class LoginActivity extends AppCompatActivity {
                 }
                 rellayLogin.setVisibility(View.GONE);
                 rellayRegister.setVisibility(View.VISIBLE);
-                Toast.makeText(LoginActivity.this,"Register Button.", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(LoginActivity.this,"Register Button.", Toast.LENGTH_SHORT).show();
             }
         });
 
         btnForgotPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(LoginActivity.this,"Forgot Password Button.", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(LoginActivity.this,"Forgot Password Button.", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -133,7 +133,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 rellayRegister.setVisibility(View.GONE);
                 rellayLogin.setVisibility(View.VISIBLE);
-                Toast.makeText(LoginActivity.this,"Volviendo al login", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(LoginActivity.this,"Volviendo al login", Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -153,7 +153,7 @@ public class LoginActivity extends AppCompatActivity {
                                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                                     for(DataSnapshot ds: dataSnapshot.getChildren()){
                                         User user = ds.getValue(User.class);
-                                        Toast.makeText(LoginActivity.this,"Acceso autorizado.", Toast.LENGTH_SHORT).show();
+                                        //Toast.makeText(LoginActivity.this,"Acceso autorizado.", Toast.LENGTH_SHORT).show();
                                         if(user.getTypeUser().equals("C")){
 
                                             Intent mainUserCActivity = new Intent(LoginActivity.this,CarerMainActivity.class);

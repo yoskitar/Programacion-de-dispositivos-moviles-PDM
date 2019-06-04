@@ -1,5 +1,11 @@
-Desarrollo de aplicación para ayudar a los enfermos de alzheimer en las primeras etapas de la enfermedad de manera que 
-ésta pueda ayudarles en tareas sencillas mediante recordatorios y la posibilidad de crear notas o apuntar eventos 
-próximos y otra serie de funcionalidades que puedan servir de ayuda, a la vez que pueda ejercitar la memoria con ejercicios 
-didácticos relacionados consigo mismos y su entorno o familiares, con diferentes grados atendiendo a lo avanzada que se 
-encuentre la enfermedad.
+Desarrollo de aplicación para ayudar a los enfermos de alzheimer en las primeras etapas de la enfermedad.
+La idea es que ésta pueda ayudarles en tareas sencillas mediante recordatorios con la posibilidad de crear 
+notas o apuntar eventos próximos y otra serie de funcionalidades que puedan servir de ayuda, como un checking
+de objetos cotidianos que pueda necesitar el usuario antes de salir de casa, a la vez que  pueda ejercitar la 
+memoria con ejercicios didácticos de cultura general, o relacionados consigo mismos y su entorno o familiares. 
+Además, la aplicación ofrece un segundo perfil enfocado a una persona encargada del usuario que padece la 
+enfermedad y cuyo perfil podrá ser vinculado al paciente o familiar enfermo de manera que pueda realizar
+un seguimiento de la evolución de éste controlando el número de objetos olvidados cada vez que sale de 
+casa. El usuario podrá solicitar ayuda a su cuidador siempre que lo necesite con tan solo pulsar un botón,
+de manera que el cuidador pueda recibir notificaciones con  la ubicacióndel momento en el que esta ayuda fue 
+solicitada y poder actuar en caso de que el paciente se hubiese perdido o desorientado.

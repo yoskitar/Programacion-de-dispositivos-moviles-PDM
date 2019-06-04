@@ -376,7 +376,7 @@ public class MainActivity extends LoginActivity {
         currentUser = FirebaseAuth.getInstance().getCurrentUser();
         if (currentUser != null) {
 
-            Toast.makeText(MainActivity.this, currentUser.getUid(), Toast.LENGTH_SHORT).show();
+            //Toast.makeText(MainActivity.this, currentUser.getUid(), Toast.LENGTH_SHORT).show();
         } else {
             Toast.makeText(MainActivity.this, "Sesión cerrada, vuelva a logearse", Toast.LENGTH_SHORT).show();
             Intent loginActivity = new Intent(MainActivity.this, LoginActivity.class);
