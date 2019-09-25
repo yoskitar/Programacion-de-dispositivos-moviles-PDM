@@ -20,3 +20,16 @@ La idea será así que cada uno de estos usuarios 'pacientes' tengan asignado un
   * Consultar resultados de los ejercicios, o checkings de sus pacientes.
   * Obtener la localización del paciente cuando este solicita su ayuda con el 
   fin de poder ayudarle en caso de haberse perdido o desorientarse.
+  
+## App 2: Who is more?
+Para el desarrollo de esta aplicación se ha empleado el entorno de programación Android Studio, 
+conectado con la plataforma FireBase. 
+
+El principal objetivo de esta aplicación es el de ofrecer al usuario una experiencia de entretenimiento
+mediante una serie de preguntas comprometidas.
+La idea de desarrollo de este juego se basa en que el grupo de jugadores que desee jugar deberá unirse
+a una sala creada por alguno de los jugadores que deberá ser el host de la partida. Una vez iniciada
+la partida, el juego irá mostrando una serie de preguntas del estilo *¿Quién es más...?,* a la que los
+jugadores deberán responder seleccionado alguno de los usuarios del grupo. Una vez que han respondido todos
+los jugadores, aquél que no ha votado al jugador más votado habrá perdido, y deberá sufrir un castigo impuesto 
+por el grupo, como podría ser realizar 10 flexiones.
