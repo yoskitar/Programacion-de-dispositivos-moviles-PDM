@@ -1,5 +1,5 @@
 # PDM
-Desarrollo de 3 aplicaciones para la asignatura de programación de dispositivos móviles.
+Desarrollo de 3 aplicaciones para la asignatura de **programación de dispositivos móviles**.
 
 ## App 1: AlzHelp
 Para el desarrollo de esta aplicación se ha empleado el entorno de programación **Android Studio**, 
