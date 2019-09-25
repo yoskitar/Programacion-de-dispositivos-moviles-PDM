@@ -12,11 +12,11 @@ Para ello la aplicación ofrecerá dos tipos de perfil con los que poder acceder
 si se trata del usuario enfermo de alzheimer o de un cuidador.
 La idea será así que cada uno de estos usuarios 'pacientes' tengan asignado un 'cuidador'.
 El usuario paciente podrá:
-  · Registrar/Eliminar/Consultar recordatorios.
-  · Pedir ayuda al cuidador en caso de pánico.
-  · Realizar un checking de comprobación de objetos al salir de casa.
-  · Realizar ejercicios para entrenar la memoria.
+  * Registrar/Eliminar/Consultar recordatorios.
+  * Pedir ayuda al cuidador en caso de pánico.
+  * Realizar un checking de comprobación de objetos al salir de casa.
+  * Realizar ejercicios para entrenar la memoria.
 El usuario cuidador podrá:
-  · Consultar resultados de los ejercicios, o checkings de sus pacientes.
-  · Obtener la localización del paciente cuando este solicita su ayuda con el 
+  * Consultar resultados de los ejercicios, o checkings de sus pacientes.
+  * Obtener la localización del paciente cuando este solicita su ayuda con el 
   fin de poder ayudarle en caso de haberse perdido o desorientarse.
