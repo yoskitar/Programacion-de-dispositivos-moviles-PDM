@@ -33,3 +33,9 @@ la partida, el juego irá mostrando una serie de preguntas del estilo *¿Quién 
 jugadores deberán responder seleccionado alguno de los usuarios del grupo. Una vez que han respondido todos
 los jugadores, aquél que no ha votado al jugador más votado habrá perdido, y deberá sufrir un castigo impuesto 
 por el grupo, como podría ser realizar 10 flexiones.
+
+## App 3: EGO
+Para el desarrollo de esta aplicación se ha empleado el entorno de programación Android Studio, empleando
+tecnologías adicionales como GraphQl para su conexión con una API realizada empleando el framework Node JS.
+En este repositiorio se encuentra en una versión inicial que no ofrece gran funcionalidad, pero puede consultar
+su versión más avanzada en el siguiente repositorio: *Link*
