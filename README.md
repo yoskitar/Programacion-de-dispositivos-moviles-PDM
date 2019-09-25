@@ -2,8 +2,8 @@
 Desarrollo de 3 aplicaciones para la asignatura de programación de dispositivos móviles.
 
 ## App 1: AlzHelp
-Para el desarrollo de esta aplicación se ha empleado el entorno de programación Android Studio, 
-conectado con la plataforma FireBase. Además, se ofrece soporte para smartwatch y comandos por voz.
+Para el desarrollo de esta aplicación se ha empleado el entorno de programación **Android Studio**, 
+conectado con la plataforma **FireBase**. Además, se ofrece soporte para **smartwatch** y **comandos por voz**.
 
 El principal ojetivo de esta aplicación es el de ayudar a las personas en las primeras fases
 de esta enfermedad, a la vez que poder realizar un seguimiento del usuario para ayudar a valorar
@@ -22,8 +22,8 @@ La idea será así que cada uno de estos usuarios 'pacientes' tengan asignado un
   fin de poder ayudarle en caso de haberse perdido o desorientarse.
   
 ## App 2: Who is more?
-Para el desarrollo de esta aplicación se ha empleado el entorno de programación Android Studio, 
-conectado con la plataforma FireBase. 
+Para el desarrollo de esta aplicación se ha empleado el entorno de programación **Android Studio**, 
+conectado con la plataforma **FireBase**. 
 
 El principal objetivo de esta aplicación es el de ofrecer al usuario una experiencia de entretenimiento
 mediante una serie de preguntas comprometidas.
@@ -35,7 +35,7 @@ los jugadores, aquél que no ha votado al jugador más votado habrá perdido, y 
 por el grupo, como podría ser realizar 10 flexiones.
 
 ## App 3: EGO
-Para el desarrollo de esta aplicación se ha empleado el entorno de programación Android Studio, empleando
-tecnologías adicionales como GraphQl para su conexión con una API realizada empleando el framework Node JS.
+Para el desarrollo de esta aplicación se ha empleado el entorno de programación **Android Studio**, empleando
+tecnologías adicionales como **GraphQl** para su conexión con una **API** realizada empleando el framework **Node JS**.
 En este repositiorio se encuentra en una versión inicial que no ofrece gran funcionalidad, pero puede consultar
 su versión más avanzada en el siguiente repositorio: *Link*
