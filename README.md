@@ -39,3 +39,6 @@ Para el desarrollo de esta aplicación se ha empleado el entorno de programació
 tecnologías adicionales como **GraphQl** para su conexión con una **API** realizada empleando el framework **Node JS**.
 En este repositiorio se encuentra en una versión inicial que no ofrece gran funcionalidad, pero puede consultar
 su versión más avanzada en el siguiente repositorio: *Link*
+
+De forma resumida, su objetivo es el de facilitar la gestión de eventos y la asistencia de los usuarios a éstos. Si desea 
+conocer más información, puede acceder al anterior enlace para consultarla más detalladamente.
